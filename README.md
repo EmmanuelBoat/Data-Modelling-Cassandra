@@ -18,6 +18,16 @@ NOTE: ETL pipeline consists of retriving data from files and traansforming them 
 
 TABLES CREATED:
 
-Facts: Songplays = Made up of songplay events for the datasets given to inform business decision.
-Dim: users = Made up of users registered to the Sparkify app. songs = Made up of all available songs in the Sparkify music dB artists = Made up of all artists of the songs in the Sparkify misuc dB time = Made up of the timestamps of song plays by users of the Sparkify app.
-NOTE: We avoid deuplication in the songplays "FACT" table by creating "DIM" tables. As evident in the lod data files, there are several instances where data duplication occurs, as such we achieve 2NF in songs and artist tables which are JOINED based on selected fields in the "song_select" query used to insert values in songplays.
+Facts: 
+
+Songplays = Made up of songplay events for the datasets given to inform business decision.
+
+Dim: 
+
+users = Made up of users registered to the Sparkify app. 
+
+songs = Made up of all available songs in the Sparkify music dB 
+
+artists = Made up of all artists of the songs in the Sparkify misuc dB 
+
+time = Made up of the timestamps of song plays by users of the Sparkify app.
